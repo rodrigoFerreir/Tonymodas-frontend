@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 import { Link } from 'react-router-dom'
-import {FiPower, FiRepeat} from 'react-icons/fi'
+import {FiPower, FiRepeat, FiAlignJustify} from 'react-icons/fi'
 
 export default function Home(){
     return(
@@ -31,6 +31,14 @@ export default function Home(){
                     <button>
                         <FiRepeat size={30} color="#E02041"/>
                     </button>
+                    <Link className= "button" to="/listarprodutos">
+                        <FiAlignJustify size={15} color="#FFF"/>
+                        Listar Produtos
+                    </Link>
+                    <Link className= "button" to="/listarclientes">
+                        <FiAlignJustify size={15} color="#FFF"/>
+                        Listar Clientes
+                    </Link>
                 </li>
             </ul>
 

@@ -3,7 +3,6 @@
     max-width: 1180px;
     padding: 0 30px;
     margin: 32px auto;
-
 }
 
 .home-container a{
@@ -71,4 +70,14 @@
 
 .home-container ul li button:hover{
     opacity: 0.8;
+}
+
+.home-container ul li .button {
+    margin-left: 20px;
+    margin-top: 60px;
+    transition: opacity 0.2s;
+}
+
+.home-container ul li .button svg {
+    margin-right: 8px;
 }
