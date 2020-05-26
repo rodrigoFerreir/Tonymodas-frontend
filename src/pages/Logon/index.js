@@ -8,6 +8,7 @@ export default function Logon(){
     return(
         <div className="logon-container">
             <section className="form">
+                <h1 className="title">Login</h1>
                 <form>
                     <h1>Informe seu logon:</h1>
                     <input placeholder="Seu id"></input>
