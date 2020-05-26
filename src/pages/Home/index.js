@@ -31,13 +31,13 @@ export default function Home(){
                     <button>
                         <FiRepeat size={30} color="#E02041"/>
                     </button>
-                    <Link className= "button" to="/listarprodutos">
+                    <Link className= "button" to="/estoque">
                         <FiAlignJustify size={15} color="#FFF"/>
-                        Listar Produtos
+                        Estoque
                     </Link>
-                    <Link className= "button" to="/listarclientes">
+                    <Link className= "button" to="/clientes">
                         <FiAlignJustify size={15} color="#FFF"/>
-                        Listar Clientes
+                        Clientes
                     </Link>
                 </li>
             </ul>

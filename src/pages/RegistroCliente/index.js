@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import './styles.css';
@@ -18,6 +18,7 @@ export default function RegistroCliente(){
     const [ complemento, setComplemento ] = useState('')
     const [ cidade, setCidade ] = useState('')
     const [ cep, setCep ] = useState('')
+    const history = useHistory();
 
     async function cadastrarCliente(evt){
         evt.preventDefault();
@@ -36,9 +37,13 @@ export default function RegistroCliente(){
             cep,
         }
 
-        const response = await api.post('clientes', data);
-        alert(`${response.data.message}`)
-
+        try{
+            const response = await api.post('clientes', data);
+            alert(`${response.data.message}`)
+            history.push('/')
+        }catch (err){
+            alert('Erro ao cadastrar o cliente, tente novamente')
+        }
     }
 
     return (

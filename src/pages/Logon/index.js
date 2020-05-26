@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import {FiLogIn} from 'react-icons/fi'
 
 import './styles.css';
@@ -14,10 +15,10 @@ export default function Logon(){
                     <h1>Informe sua senha:</h1>
                     <input placeholder="Sua senha"></input>
 
-                    <button className="button" type="submit">
+                    <Link className="button" type="submit" to='/home'>
                         <FiLogIn size={14} color="#FFF"/>
                         Entrar
-                    </button>
+                    </Link>
                     
                 </form>
             </section>

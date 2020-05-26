@@ -1,14 +1,64 @@
 import React from 'react';
-import Axios from 'axios';
+// import Axios from 'axios';
 
-export default function ListarProdutos(){
-    async function listProdutos(props){
-        const produtos = await Axios.get('produtos')
-    }
+import './styles.css';
+
+export default function ListarProdutos(props){
+    // async function listProdutos(){
+    //     const produtos = await Axios.get('/produtos')
+    //     return produtos;
+    // }
     return(
-        <div>
-            <h1>Lista de Produtos</h1>
-            <h2>{{}}</h2>
+        <div className="produtos-container">
+            <h1>Estoque</h1>
+            <ul>
+                <li>
+                    <strong>Nome:</strong>
+                    <p>Nome do produto</p>
+
+                    <strong>Categoria:</strong>
+                    <p>Nome da categoria</p>
+
+                    <strong>Quantidade:</strong>
+                    <p>10</p>
+
+                    <strong>Valor:</strong>
+                    <p>R$ 150,00</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <strong>Nome:</strong>
+                    <p>Nome do produto</p>
+
+                    <strong>Categoria:</strong>
+                    <p>Nome da categoria</p>
+
+                    <strong>Quantidade:</strong>
+                    <p>10</p>
+
+                    <strong>Valor:</strong>
+                    <p>R$ 150,00</p>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <strong>Nome:</strong>
+                    <p>Nome do produto</p>
+
+                    <strong>Categoria:</strong>
+                    <p>Nome da categoria</p>
+
+                    <strong>Quantidade:</strong>
+                    <p>10</p>
+
+                    <strong>Valor:</strong>
+                    <p>R$ 150,00</p>
+                </li>
+            </ul>
+            
         </div>
 
     )

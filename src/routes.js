@@ -6,7 +6,9 @@ import RegistroCliente from './pages/RegistroCliente';
 import RegistroProduto from './pages/RegistroProduto';
 import NovaVenda from './pages/NovaVenda';
 import Relatorios from './pages/Relatorios';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import Estoque from './pages/ListarProdutos';
+import Clientes from './pages/ListarClientes';
 
 export default function Routes(){
     return (
@@ -18,6 +20,8 @@ export default function Routes(){
                 <Route path="/cadastrarproduto" component={RegistroProduto}/>
                 <Route path="/novavenda" component={NovaVenda}/>
                 <Route path="/relatorios" component={Relatorios}/>
+                <Route path="/estoque" component={Estoque}/>
+                <Route path="/clientes" component={Clientes}/>
             </Switch>
         </BrowserRouter>
     )
