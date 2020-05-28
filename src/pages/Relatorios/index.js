@@ -14,6 +14,9 @@ export default function Relatorios(){
                     Home
                 </Link>
             </section>
+            <Link className="button" to="/relatorios/vendas">Relatorios de Venda</Link>
+            <Link className="button" to="/relatorios/estoque">Relatorios de Estoque</Link>
+            <Link className="button" to="/relatorios/financeiro">Relatorio Financeiro</Link>
         </div>
     );
 }
