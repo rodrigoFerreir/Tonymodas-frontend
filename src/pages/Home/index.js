@@ -13,9 +13,9 @@ export default function Home(){
                 <Link className="button" to="/cadastrarproduto">Cadastrar Produto</Link>
                 <Link className="button" to="/novavenda">Realizar Venda</Link>
                 <Link className="button" to="/relatorios">Relatorios</Link>
-                <button type="button" >
+                <Link className="logoff" type="button" to="/" >
                     <FiPower size={20} color="#E02041"/>
-                </button>
+                </Link>
             </header>
 
             <ul>

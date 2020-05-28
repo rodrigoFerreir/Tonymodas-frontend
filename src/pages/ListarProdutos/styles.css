@@ -52,7 +52,9 @@
 }
 
 .produtos-container ul li .button-delete {
-    position: absolute;
+    position: relative;
+    margin-left: 100%;
+    margin-bottom: 20px;
     right: 24px;
     top: 24 px;
     border: 0;
