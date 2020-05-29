@@ -8,7 +8,7 @@ export default function Relatorios(){
     return (
         <div className="relatorio-container">
             <section>
-                <h1 className="title">Relatorios</h1>
+                <h1 className="title">Relatórios</h1>
                 <Link className="back-link" to="/home">
                     <FiArrowLeft size={20} color="#E02041"/>
                     Home

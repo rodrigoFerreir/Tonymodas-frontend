@@ -15,6 +15,49 @@ export default function NovaVenda(){
                     </Link>
             </section>
 
+            <form className="dados-venda">
+                <h2>Dados do Cliente:</h2>
+                <input placeholder="CPF"/>
+
+                <h2>Lista de Produtos:</h2>
+                <input placeholder="ID produtos"/>
+            </form>
+
+            <div className="produto-checklist" typeof="">
+                <ul>
+                    <li>
+                        <strong>Nome do produto</strong>
+                        <p>Camisa Polo</p>
+
+                        <strong>Quantidade</strong>
+                        <p>01</p>
+
+                        <strong>Valor</strong>
+                        <p>R$ 120,00</p>
+                    </li>
+                    <li>
+                        <strong>Nome do produto</strong>
+                        <p>Camisa Polo</p>
+
+                        <strong>Quantidade</strong>
+                        <p>01</p>
+
+                        <strong>Valor</strong>
+                        <p>R$ 120,00</p>
+                    </li>
+                    <li>
+                        <strong>Nome do produto</strong>
+                        <p>Camisa Polo</p>
+
+                        <strong>Quantidade</strong>
+                        <p>01</p>
+
+                        <strong>Valor</strong>
+                        <p>R$ 120,00</p>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     );
 }
