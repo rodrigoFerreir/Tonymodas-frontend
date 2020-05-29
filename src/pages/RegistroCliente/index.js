@@ -38,8 +38,12 @@ export default function RegistroCliente(){
         }
 
         try{
-            const response = await api.post('clientes', data);
-            alert(`${response.data.message}`)
+            await api.post('clientes', data);
+            await api.post('enderecos', data);
+            await api.post('contatos', data);
+            await api.post('cidades', data);
+
+            alert(`Cliente cadastrado com sucesso`)
             history.push('/')
         }catch (err){
             alert('Erro ao cadastrar o cliente, tente novamente')
